@@ -1,0 +1,91 @@
+<html>
+<head>
+<title>Segundo Formulario .v.</title>
+</head>
+<body>
+<H3>FORMULARIO DE IMPLEMENTACI&OacuteN DE NUEVAS ETIQUETAS</H3>
+<fieldset><!--borde de un elemento del formulario-->
+<legend>Mensaje</legend><!--introducir texto en las margenes-->
+
+<p>
+
+Tu nombre: <input type="text" name="nombre">
+</br>
+</br>
+<label>
+Tu direccion de correo: <input type="text" name="direccion" value="@hotmail.com">
+</p>
+
+<label><!-- es como p , otra forma de poner texto-->
+
+Tu mensaje:
+</br>
+</br>
+<textarea name="mensaje" cols="20" rows="10"></textarea>
+</br>
+</br>
+</fieldset>
+
+</br>
+<fieldset>
+
+<legend>¿Cu&aacutel es tu deporte favorito?</legend>
+<label><input type="Checkbox" name="Futbol">F&uacutetbol</label> 
+</br>
+
+<label><input type="Checkbox" name="Baloncesto">Baloncesto</label> 
+</br>
+
+<label><input type="Checkbox" name="Golf">Golf</label> 
+</br>
+
+<label><input type="Checkbox" name="Voleyball">Voleyball</label> 
+</br>
+
+<label><input type="Checkbox" name="Baisbol">Baisbol</label> 
+</br>
+
+<!--checkbox selecciones multiples-->
+</fieldset>
+</br>
+<fieldset>
+
+<legend>Ingreso</legend>
+Usuario:<input type="name" name="usuario"/>
+</br>
+</br>
+Contraseña:<input type="password" name="contraseña">
+<!--campo para contraseña-->
+</fieldset>
+</br>
+<fieldset>
+
+<legend>Edades</legend>
+<label><input type="Radio" name="edad" value="menor">menor 17</label> 
+<label><input type="Radio" name="edad" value="adulto">Entre 18 y 60</label> 
+<label><input type="Radio" name="edad" value="mayor">Mayor de 61</label> 
+</br>
+<!--radio button: campo para elegir solo una opcion-->
+</fieldset>
+<fieldset>
+<legend>Foto</legend>
+Ingrese su Foto:<input type="file" name="foto">
+<!-- File:Seleccionar el archivo-->
+</fieldset>
+</br>
+<fieldset>
+<legend>Boton con icono</legend>
+<a href="https://www.youtube.com/"><input type="Image" name="foto" value="aceptar" src="Check Mark.jpg" width="83" height="58,5"></a>
+</fieldset>
+<!--poner imagen en boton-->
+</br>
+<fieldset>
+<legend>Pais de origen</legend>
+<select name="Pais">
+<option value="Colombia">Colombia</option>
+<option value="Japon">Japon</option>
+<option value="China">China</option>
+
+</fieldset>
+</body>
+</html>

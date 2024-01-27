@@ -1,0 +1,124 @@
+<html>
+<head>
+<title>menu</title>
+<style type="text/css"> 
+ * {
+padding:0px;<!--espacio que va ocupar el menu en la pagina-->  
+margin:0px;<!--Margenes-->
+	 }
+	 <!--por defecto siempre es 0-->
+	 
+#menu {<!--segmento para editar el menu en general (<ul id= "menu">) -->
+margin:auto;
+width:500px;<!--500 para centrar 10000 para ponerlo a la izquierda-->
+font-family:Arial, Helvetica, sans-serift; <!--tipó de letras-->
+}
+ul , ol {
+list-style:none;<!--para quitar los puntos del menu desplegable-->
+	}	
+
+.nav li a {<!--segun el ul class , en este caso le pusimos .nav , menu principal -->
+ background-color:#000;<!-- color de fondo del menu-->
+color:#fff;<!--color fuente-->
+text-decoration:none;<!--para quitar las lineas de las letras y dejarlas normal-->
+padding:10px 15px;<!--anchura y altura del cuadro-->
+display:block;<!-- para que se conviertan en bloque y no se agrupen-->
+	 }	
+	 
+.nav li a:hover {<!--para estilo, cuando pase el mause se cambie de color-->
+background-color:#434343;<!--color q quiero q se coloque-->
+	 }
+	 
+.nav > li {
+float:left;<!--forma del menu-->
+
+}
+.nav li ul {
+display:none;<!--todos los sudmenus desaparecen-->
+position:absolute;<!--confome al menu-->
+min-width:140px;<!--tamaño-->
+}
+	 
+.nav li:hover > ul {<!--para q cuando pasemos el mouse aparescan-->
+display:block;
+}
+
+.nav li ul li {<!--todos los li dentro de ul dentro de li-->
+position:relative;<!--para poner submenus al lado-->
+	
+}
+
+.nav li ul li ul {<!--todos los li dentro de ul dentro de li dentro de ul-->
+right:-140px;<!-- para q se corra a la derecha -->
+top:0px; 
+
+}      	 
+		 
+		 Explicacion de algunas funciones
+		 
+#menu li{ <!--este segmento va a editar los items del menu -->
+display:inline;<!-- Display: forma de ver la parte del menu (elemento segmentado)-->
+
+}
+
+#menu li a{
+font-family:Arial; <!-- Forma de la letra-->
+font-size:10px;<!-- tamaño de la letra -->
+float:left;<!-- parte en la que quiero que este ubicado el menu-->
+padding:10px;<!--relleno -->
+background-color:#2175bc;<!--color del contorno de los items del menu -->
+color: #fff;
+}
+
+#menu a:hover
+{<!--hover: cambios al pasar el mouse por el item del menu -->
+background-color:#2586d7;
+margin-top:-2px;
+padding-bottom:12px;
+<!--propiedades para asegurarme de que no se salga items del sitio correspondiente -->
+
+}
+
+</style>
+</head>
+<body>
+<div id ="header">
+     <ul class= "nav">
+	      
+          <li><a href="">Incio</a>
+		       <ul>
+			   <li><a href="">Musica</a></li> 		
+			   <li><a href="">Gustos</a></li>
+               <li><a href="">Comida</a></li> 		
+               <li><a href="">Programas	de TV</a>
+
+			          <ul>
+			          <li><a href="">Musica</a></li> 		
+			          <li><a href="">Gustos</a></li>
+                      <li><a href="">Comida</a></li> 		
+                      <li><a href="">Programas	de TV</a> </li> 					   
+			          </ul>
+			   
+			   </li> 					   
+			   </ul>
+		  
+		  </li> 		  
+		  <li><a href="">Servicios</a>
+               <ul>
+			   <li><a href="">Musica</a></li> 		
+			   <li><a href="">Gustos</a></li>
+               <li><a href="">Comida</a></li> 		
+               <li><a href="">Programas	de TV</a> </li> 					   
+			   </ul>
+
+		  </li> 		
+		  <li><a href="">Acerca de</a> </li> 		
+		  <li><a href="">Contacto</a> </li> 		
+	 
+  	 
+	 </ul>
+</div>
+
+
+</body>
+</html>

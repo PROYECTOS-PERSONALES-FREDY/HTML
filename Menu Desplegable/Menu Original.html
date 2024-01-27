@@ -1,0 +1,107 @@
+<html>
+<head>
+
+<title>Menu desplegable</title>
+<style type ="text/css">
+
+    * {
+	 padding:0px;    
+	 margin:0px
+	 }
+     
+	 #header {
+	 margin:auto;
+	 width:500px;
+	 font-family:Arial, Helvetica, sans-serift; 
+	 	 }
+		 
+	ul , ol {list-style:none;}	 
+		 
+		 
+     .nav li a {
+	 background-color:#000;
+	 color:#fff;
+	 text-decoration:none;
+	 padding:10px 15px;	 
+	 display:block;
+	 }
+	 
+	 .nav li a:hover {
+	 background-color:#434343;
+	 
+	 }
+		 .nav > li {
+		 float:left;
+		 
+		 }
+		 
+	.nav li ul {
+	display:none;
+	position:absolute;
+	min-width:140px;
+	}	 
+	
+	.nav li:hover > ul {
+	display:block;
+	}
+	
+	.nav li ul li {
+	position:relative;
+	
+	}
+	
+    .nav li ul li ul {
+	right:-140px;
+	top:0px; 
+	
+	}      
+
+
+
+	 
+	 </style>
+
+</head>
+<body>
+
+<div id ="header">
+     <ul class= "nav">
+	      
+          <li><a href="">Incio</a>
+		       <ul>
+			   <li><a href="">Musica</a></li> 		
+			   <li><a href="">Gustos</a></li>
+               <li><a href="">Comida</a></li> 		
+               <li><a href="">Programas	de TV</a>
+
+			          <ul>
+			          <li><a href="">Musica</a></li> 		
+			          <li><a href="">Gustos</a></li>
+                      <li><a href="">Comida</a></li> 		
+                      <li><a href="">Programas	de TV</a> </li> 					   
+			          </ul>
+			   
+			   </li> 					   
+			   </ul>
+		  
+		  </li> 		  
+		  <li><a href="">Servicios</a>
+               <ul>
+			   <li><a href="">Musica</a></li> 		
+			   <li><a href="">Gustos</a></li>
+               <li><a href="">Comida</a></li> 		
+               <li><a href="">Programas	de TV</a> </li> 					   
+			   </ul>
+
+		  </li> 		
+		  <li><a href="">Acerca de</a> </li> 		
+		  <li><a href="">Contacto</a> </li> 		
+	 
+  	 
+	 </ul>
+
+</div>
+</body>
+
+
+</html>
